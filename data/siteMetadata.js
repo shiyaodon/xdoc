@@ -1,7 +1,7 @@
 const siteMetadata = {
   title: 'Raphaël Chelly - Digital marketing project manager',
-  author: 'Raphaël Chelly',
-  headerTitle: 'Raphaël Chelly',
+  author: 'IHSGNODOAY',
+  headerTitle: 'IHSGNODOAY',
   description: 'Portfolio of a digital marketing guy who codes a bit.',
   language: 'en-us',
   theme: 'system', // system, dark or light
