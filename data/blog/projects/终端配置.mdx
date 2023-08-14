@@ -7,8 +7,6 @@ images: ['/static/images/twitter-card.png']
 summary: 'Window 和 Linux 系统终端美化'
 ---
 
-## 目录
-
 <TOCInline toc={props.toc} exclude="Introduction" />
 
 ## Linux 终端配置
@@ -69,15 +67,15 @@ echo 'eval "$(starship init zsh)"' >> ~/.zshrc
 
    你也可以使用 `wget` 命令直接从 GitHub 下载字体文件，然后将其复制到系统字体目录中。以下是一个例子：
 
-   ```bash
-   wget https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf
-   ```
+```bash
+wget https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf
+```
 
-   ```bash
-   sudo cp "Hack Regular Nerd Font Complete.ttf" /usr/share/fonts/
-   ```
+```bash
+sudo cp "Hack Regular Nerd Font Complete.ttf" /usr/share/fonts/
+```
 
-   请注意，你可能需要适当地调整命令中的链接和文件名，以便与你下载的字体文件相匹配。
+请注意，你可能需要适当地调整命令中的链接和文件名，以便与你下载的字体文件相匹配。
 
 3. **手动安装：**
 
@@ -170,7 +168,6 @@ source ~/.zshrc
 ```
 
 
-
 ## Linux 终端配置
 
 ### 下载 Oh My Bash
@@ -228,31 +225,31 @@ eval "$(starship init bash)"
 
 1. **确保 Starship 已经安装：** 首先，确保你已经成功安装了 Starship。你可以使用以下命令检查是否已经安装：
 
-   ```bash
-   starship --version
-   ```
+```bash
+starship --version
+```
 
-   如果没有安装，你可以根据 Starship 官方文档的指引进行安装，如果安装了检查PATH环境变量。
+如果没有安装，你可以根据 Starship 官方文档的指引进行安装，如果安装了检查PATH环境变量。
 
 2. **检查 PATH 环境变量：** 如果 Starship 已经安装但是出现 "command not found" 错误，可能是因为其可执行文件路径没有添加到系统的 PATH 环境变量中。你可以使用以下命令查看当前的 PATH 环境变量：
 
-   ```bash
-   echo $PATH
-   ```
+```bash
+echo $PATH
+```
 
-   确保 Starship 的可执行文件所在的路径已经包含在 PATH 中。一般情况下，Starship 的可执行文件位于安装 starship的 bin目录下  或 `~/.cargo/bin/`（假设你使用 Rust 安装）等路径下。
+确保 Starship 的可执行文件所在的路径已经包含在 PATH 中。一般情况下，Starship 的可执行文件位于安装 starship的 bin目录下  或 `~/.cargo/bin/`（假设你使用 Rust 安装）等路径下。
 
 3. **手动添加到 PATH：** 如果 Starship 的可执行文件路径没有添加到 PATH 中，你可以手动将其添加。打开终端，并编辑你的 shell 配置文件（比如 `~/.bashrc`、`~/.zshrc` 等），在文件中添加类似以下的行：
 
-   ```bash
-   export PATH=$PATH:/path/to/starship
-   ```
+```bash
+export PATH=$PATH:/path/to/starship
+```
 
-   将 `/path/to/starship` 替换为实际的 Starship 可执行文件所在的路径。保存文件后，运行以下命令使更改生效：
+将 `/path/to/starship` 替换为实际的 Starship 可执行文件所在的路径。保存文件后，运行以下命令使更改生效：
 
-   ```bash
-   source ~/.bashrc  # 或 source ~/.zshrc，根据你的配置文件而定
-   ```
+```bash
+source ~/.bashrc  # 或 source ~/.zshrc，根据你的配置文件而定
+```
 
 4. **重新启动终端：** 重新打开一个终端窗口，然后再次尝试运行 `starship` 命令，看是否能够正常使用。
 
