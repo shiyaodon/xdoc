@@ -18,12 +18,12 @@ export default function Footer() {
           <div>{siteMetadata.author}</div>
         </div>
         <div className="mb-8 flex flex-col space-x-2 text-sm text-gray-500 dark:text-gray-400 md:flex-row">
-          <Link
-            className="hover:text-primary-600 hover:underline dark:hover:text-primary-600"
-            href="/"
-          >
-            home
-          </Link>
+          {/*<Link*/}
+          {/*  className="hover:text-primary-600 hover:underline dark:hover:text-primary-600"*/}
+          {/*  href="/"*/}
+          {/*>*/}
+          {/*  home*/}
+          {/*</Link>*/}
           <Link
             className="hover:text-primary-600 hover:underline dark:hover:text-primary-600"
             href="/blog"

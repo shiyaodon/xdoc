@@ -1,5 +1,5 @@
 const siteMetadata = {
-  title: 'Raphaël Chelly - Digital marketing project manager',
+  title: 'IHSGNODOAY',
   author: 'IHSGNODOAY',
   headerTitle: 'IHSGNODOAY',
   description: 'Portfolio of a digital marketing guy who codes a bit.',
